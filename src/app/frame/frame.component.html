@@ -16,5 +16,15 @@
 
   <div class="resizers"
        [style.width.px]="size.w"
-       [style.height.px]="size.h"></div>
+       [style.height.px]="size.h">
+    <div (mousedown)="startResize($event, ['right'], 'x')" class="resizer right"></div>
+    <div (mousedown)="startResize($event, ['left'], 'x')" class="resizer left"></div>
+    <div (mousedown)="startResize($event, ['bottom'],'y')" class="resizer bottom"></div>
+    <div (mousedown)="startResize($event, ['top'], 'y')" class="resizer top"></div>
+    <div (mousedown)="startResize($event, ['top','right'], 'xy')" class="resizer top-right"></div>
+    <div (mousedown)="startResize($event, ['top','left'], 'xy')" class="resizer top-left"></div>
+    <div (mousedown)="startResize($event, ['bottom','left'], 'xy')" class="resizer bottom-left"></div>
+    <div #resizeCorner (mousedown)="startResize($event, ['bottom','right'], 'xy')" class="resizer bottom-right"></div>
+
+  </div>
 </div>

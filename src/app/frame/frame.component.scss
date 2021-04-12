@@ -14,3 +14,69 @@
   height: 20px;
   background-color: black;
 }
+
+
+.resizers {
+  box-sizing: border-box;
+
+  .resizer {
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    background: white;
+    border: 1px solid #d50000;
+    position: absolute;
+  }
+
+  .right {
+    top: 0;
+    right: -3px;
+    height: 100%;
+    cursor: ew-resize;
+  }
+
+  .bottom {
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    cursor: ns-resize;
+  }
+
+  .top {
+    top: -3px;
+    left: 0;
+    width: 100%;
+    cursor: ns-resize;
+  }
+
+  .left {
+    top: 0;
+    left: -3px;
+    height: 100%;
+    cursor: ew-resize;
+  }
+
+  .bottom-right {
+    right: -3px;
+    bottom: -3px;
+    cursor: nwse-resize;
+  }
+
+  .top-right {
+    right: -3px;
+    top: -3px;
+    cursor: nesw-resize;
+  }
+
+  .top-left {
+    left: -3px;
+    top: -3px;
+    cursor: nwse-resize;
+  }
+
+  .bottom-left {
+    left: -3px;
+    bottom: -3px;
+    cursor: nesw-resize;
+  }
+}
