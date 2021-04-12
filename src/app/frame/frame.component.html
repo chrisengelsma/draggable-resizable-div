@@ -1,0 +1,20 @@
+<div #wrapper
+     class="frame-wrapper"
+     [style.top.px]="position.y"
+     [style.left.px]="position.x">
+
+  <div #topBar></div>
+
+  <div class="content-wrapper"
+       [style.width.px]="size.w"
+       [style.height.px]="size.h">
+
+    <div class="top-bar-wrapper"
+         (mousedown)="startDrag($event)"></div>
+
+  </div>
+
+  <div class="resizers"
+       [style.width.px]="size.w"
+       [style.height.px]="size.h"></div>
+</div>

@@ -1,0 +1,16 @@
+.frame-wrapper {
+  position: absolute;
+  border: 2px solid black;
+}
+
+.content-wrapper {
+  position: absolute;
+  background-color: lightblue;
+  overflow: auto;
+}
+
+.top-bar-wrapper {
+  width: 100%;
+  height: 20px;
+  background-color: black;
+}
